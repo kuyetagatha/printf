@@ -84,11 +84,10 @@ int write_number(int is_negative, int ind, char buffer[],
  * @buffer: Buffer
  * @width: Width
  * @flags: Flags
- * @precision: Precision specifier
  * @length: number of length
  * @padd: padding char
  * @extra_c: Extra char
- *
+ * @prec: pint prec
  * Return: Number of printed chars.
  */
 int write_num(int ind, char buffer[],
