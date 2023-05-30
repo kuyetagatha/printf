@@ -11,7 +11,7 @@
  * @size: specifies sixe
  * Return: Result
  */
- 
+
 int print_pointer(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -45,16 +45,14 @@ int print_pointer(va_list types, char buffer[],
 		extra_c = '+', length++;
 	else if (flags & F_SPACE)
 		extra_c = ' ', length++;
-
-    vpv++;
-	
+	vpv++;
 	return (write_pointer(buffer, vpv, length,
 		width, flags, padd, extra_c, padd_start));
 }
 
-/************************* PRINT NON PRINTABLE HEXADECIMAL NOTATION*************************/
+/********************** PRINT NON PRINTABLE HEXD CHAR **********************/
 /**
- * print_non_printable - Prints ascii codes in hexadecimals in non printable chars
+ * print_non_printable - Prints ascii codes in hexd in non printable chars
  * @types: List all types of arguments
  * @buffer: Buffer array to assist print
  * @flags:  Calculates all present active flags
@@ -136,7 +134,8 @@ int print_reverse(va_list types, char buffer[],
 	}
 	return (val);
 }
-/************************* TO PRINT A STRING IN ROT13 *************************/
+
+/*************************PRINTS A STRING IN ROT13*************************/
 /**
  * print_rot13string - Print a string in rot13.
  * @types: List all types of arguments
@@ -188,4 +187,3 @@ int print_rot13string(va_list types, char buffer[],
 	}
 	return (val);
 }
-

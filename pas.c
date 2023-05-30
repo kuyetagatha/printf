@@ -1,6 +1,6 @@
 #include "main.h"
 
-/************************* Evaluate and calculate the size to be cast *************************/
+/********************** Evaluate the size to be cast **********************/
 /**
  * get_size - Evaluates the precise size to cast the argument
  * @format: string that are formatted in which to print the arguments

@@ -1,6 +1,6 @@
 #include "main.h"
 
-/************************* TO PRINT UNASIGNED NUMBERS *************************/
+/*************************PRINTS UNASIGNED NUMBERS*************************/
 /**
  * print_unsigned - Prints all unsigned number
  * @types: List diffrent types of arguments
@@ -79,7 +79,7 @@ int print_octal(va_list types, char buffer[],
 	return (write_unsgnd(0, c, buffer, flags, width, precision, size));
 }
 
-/************** TO PRINT ALL UNSIGNED NUMBER IN HEXADECIMAL NOTATION **************/
+/*************PRINTS ALL UNSIGNED NUMBER IN HEXD NOTATION**************/
 /**
  * print_hexadecimal - Prints an input number in hexadecimal notation
  * @types: Lists all types of arguments
@@ -117,7 +117,7 @@ int print_hexa_upper(va_list types, char buffer[],
 		flags, 'X', width, precision, size));
 }
 
-/**************  TO PRINT HEX NUMBER IN THELOWER OR UPPER NOTATION **************/
+/**************PRINTS HEX NUM IN LOWER OR CHAR **************/
 /**
  * print_hexa - Prints all hexadecimal numbers in lower or upper notation
  * @types: Lists all types of arguments

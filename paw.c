@@ -1,6 +1,6 @@
 #include "main.h"
 
-/************************* EVALUATES AND PRINT THE WIDTH *************************/
+/************************* EVALUATES&PRINT THE WIDTH *************************/
 /**
  * get_width - Evaluates the width for the print function
  * @format: Formats strings that are used print the diff arguments.
@@ -18,7 +18,7 @@ int get_width(const char *format, int *i, va_list list)
 	{
 		if (is_digit(format[cst_i]))
 		{
-			wid*= 10;
+			wid *= 10;
 			wid += format[cst_i] - '0';
 		}
 		else if (format[cst_i] == '*')

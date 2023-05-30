@@ -19,7 +19,7 @@ int is_printable(char c)
 /**
  * append_hexa_code - Append all ascci input in hexadecimal code to buffer
  * @buffer: list of difffrent array of different chars.
- * @i: Num which will start the appending process.
+ * @b: Num which will start the appending process.
  * @ascii_code: assigned ascii codes
  * Return: 3
  */
@@ -27,12 +27,12 @@ int is_printable(char c)
 int append_hexa_code(char ascii_code, char buffer[], int b)
 {
 	char map_to[] = "0123456789ABCDEF";
+
 	if (ascii_code < 0)
-		ascii_code *= -1;
+	ascii_code *= -1;
 
 	buffer[b++] = '\\';
 	buffer[b++] = 'x';
-
 	buffer[b++] = map_to[ascii_code / 16];
 	buffer[b] = map_to[ascii_code % 16];
 
